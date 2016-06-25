@@ -1,0 +1,37 @@
+$colour-cold: rgb(64, 94, 108);
+
+.header {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  color: black;
+  align-content: center;
+  box-shadow: 0 0 5px 2px rgb(230, 230, 230);
+  transition: background-color 0.5s, box-shadow 0.5s;
+
+  a {
+    color: $colour-cold;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2em;
+
+    .left {
+      margin: 0 8px;
+    }
+
+    .logo {
+      margin: 0 8px;
+    }
+
+    .right {
+      margin: 0 8px;
+    }
+  }
+}
