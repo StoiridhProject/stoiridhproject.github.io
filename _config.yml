@@ -1,0 +1,9 @@
+name: Stòiridh Project
+markdown: kramdown
+
+# Configuration
+layouts_dir: ./templates/layouts
+includes_dir: ./templates/includes
+
+sass:
+  sass_dir: static/sass
