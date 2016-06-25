@@ -1,0 +1,13 @@
+# Backup files
+*~
+
+# -- Ruby Gems --
+# Bundle
+Gemfile.lock
+
+# Jekyll
+_site/
+.jekyll-metadata
+
+# Sass
+.sass-cache/
