@@ -1,0 +1,52 @@
+@import "palettes";
+
+footer.site-footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 128px;
+
+  background-color: $colour-cold;
+  color: white;
+  font-size: 0.8rem;
+
+  .grid {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    width: 100%;
+    height: 102px;
+
+    .col {
+      display: block;
+      align-self: center;
+      flex: 1;
+
+      margin: auto;
+      padding: 0;
+      width: 30%;
+      height: 100%;
+
+      ul {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .section {
+          color: $colour-cold-hover;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    display: block;
+
+    margin: 4px auto;
+    text-align: center;
+  }
+}
