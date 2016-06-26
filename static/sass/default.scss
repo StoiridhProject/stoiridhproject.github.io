@@ -2,8 +2,17 @@ html {
   font-family: 'Noto Sans', sans-serif;
 }
 
-body {
-  margin: 0;
+a {
+  color: currentColor;
+  text-decoration: none;
+
+  &:hover {
+    color: currentColor;
+  }
+
+  &:visited {
+    color: currentColor;
+  }
 }
 
 ul {
