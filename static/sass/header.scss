@@ -1,37 +1,57 @@
-$colour-cold: rgb(64, 94, 108);
+$colour-cold: #405e6c;
+$colour-cold-hover: #19b6ff;
+$header-height: 64px;
 
-.header {
-  position: absolute;
-  display: block;
+header.site-header {
+  display: flex;
+  align-items: center;
+
   width: 100%;
-  height: 64px;
-  background-color: white;
-  color: black;
-  align-content: center;
-  box-shadow: 0 0 5px 2px rgb(230, 230, 230);
-  transition: background-color 0.5s, box-shadow 0.5s;
+  height: $header-height;
 
-  a {
-    color: $colour-cold;
+  background: white;
+  color: $colour-cold;
+  font-size: 1.2rem;
+  box-shadow: 0 0 5px 2px #e6e6e6;
+
+  @media all and (max-width: 420px) {
+    font-size: 1.0rem;
   }
 
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-size: 1.2em;
+  nav {
+    margin: auto;
+    align-self: center;
 
-    .left {
-      margin: 0 8px;
+    ul {
+      display: flex;
+      align-items: center;
+
+      margin: 0;
+      width: auto;
+      height: auto;
+
+      list-style: none;
     }
 
-    .logo {
-      margin: 0 8px;
-    }
+    a {
+      display: inline-block;
 
-    .right {
-      margin: 0 8px;
+      padding: floor(($header-height - 27px) / 2) 8px;
+
+      transition: color 0.5s;
+
+      &:hover {
+        color: $colour-cold-hover;
+      }
+
+      &.logo {
+        margin: 0 auto;
+        padding: floor(($header-height - 54px) / 2) 16px;
+        width: 48px;
+        height: 48px;
+
+        background: url("/static/images/logo.svg") center no-repeat;
+      }
     }
   }
 }
