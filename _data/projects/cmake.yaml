@@ -1,0 +1,6 @@
+name: CMake
+colour: '#bd0000'
+projects:
+  - name: Stòiridh CMake Tools
+    github: Stoiridh-CMake-Tools
+    version: in dev.

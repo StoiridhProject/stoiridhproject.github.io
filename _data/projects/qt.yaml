@@ -1,0 +1,10 @@
+name: Qt
+colour: '#41cd52'
+projects:
+  - name: Stòiridh.Controls
+    github: Stoiridh.Controls
+    version: in dev.
+
+  - name: Stòiridh.Settings
+    github: Stoiridh.Settings
+    version: in dev.

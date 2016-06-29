@@ -1,0 +1,10 @@
+name: Python
+colour: '#3776ab'
+projects:
+  - name: Stòiridh Tools
+    github: Stoiridh-Tools
+    version: in dev.
+
+  - name: Stòiridh Qt Sphinx Extension
+    github: stoiridh.sphinx.ext.qt
+    version: in dev.

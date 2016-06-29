@@ -1,0 +1,77 @@
+@import "palettes";
+
+div.projects {
+  display: flex;
+  flex-flow: column;
+
+  width: 100%;
+  height: auto;
+
+  > p {
+    padding: 0 0 8px 8px;
+    border-bottom: 2px solid currentColor;
+
+    color: currentColor;
+    font-size: 1.2rem;
+  }
+
+  &-view {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+div.project-card {
+  display: block;
+
+  margin: 8px;
+  width: 298px;
+  height: 198px;
+  border: 1px solid $colour-projects-card-border;
+
+  &:hover {
+    box-shadow: 0 0 8px 2px $colour-projects-card-border;
+    transition: box-shadow 250ms;
+  }
+
+  .header {
+    display: block;
+    margin: 0;
+    padding: 2px;
+    width: calc(100% - 4px);  // 4px = 4px (project-card.border{bottom, top})
+    height: 50px;
+
+    background: $colour-project-header;
+    color: white;
+    font-size: 1.0rem;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .footer {
+    display: block;
+
+    margin: 0;
+    width: 100%;
+    // 54px = 50px (header.height) + 4px (project-card.border{bottom, top})
+    height: calc(100% - 54px);
+
+    .version {
+      position: relative;
+      float: right;
+
+      // 33px = 25px (the size as whole of the version <div> element) + 8px (version.margin.bottom)
+      top: calc(100% - 33px);
+      margin: 0 8px;
+      padding: 0 4px;
+      width: auto;
+      height: 25px;
+      line-height: 25px;
+
+      background: #d21021;
+      color: white;
+
+      font-size: 0.8em;
+    }
+  }
+}
