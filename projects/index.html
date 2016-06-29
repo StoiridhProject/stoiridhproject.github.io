@@ -3,5 +3,28 @@ layout: default
 title: Projects - Stòiridh Project
 ---
 <div class="content">
-
+{% for projects_data in site.data.projects %}
+  {% assign projects = projects_data[1] %}
+  <div class="projects">
+    <p class="projects-language" style="color:{{projects.colour}}">
+      {{ projects.name }}
+    </p>
+    {% if projects.projects %}
+    <div class="projects-view">
+      {% for project in projects.projects %}
+      <div class="project-card">
+        <header class="header">
+          <a href="#">{{ project.name }}</a>
+        </header>
+        <footer class="footer">
+          <div class="footer version">
+            {{ project.version }}
+          </div>
+        </footer>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+{% endfor %}
 </div>

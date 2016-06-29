@@ -1,25 +1,27 @@
 ---
 ---
-
 // common
 @import "default";
 @import "header";
 @import "footer";
 
+// projects
+@import "projects";
+
 .content {
-  // 256px = 64px (content.margin{top,bottom}) + 64px (header.height) + 128px (footer.height)
   display: flex;
   flex-flow: column;
 
-  margin: 32px;
-  min-height: calc(100vh - 256px);
+  margin: 16px;
+  // 224px = 32px (content.margin{top,bottom}) + 64px (header.height) + 128px (footer.height)
+  min-height: calc(100vh - 224px);
 
   @media all and (max-width: 640px) {
     flex-flow: column;
 
     margin: 8px;
     min-height: calc(100vh - 208px);
-    
+
     font-size: 0.8em;
   }
 }
