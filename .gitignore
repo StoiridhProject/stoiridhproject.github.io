@@ -2,9 +2,6 @@
 *~
 
 # -- Ruby Gems --
-# Bundle
-Gemfile.lock
-
 # Jekyll
 _site/
 .jekyll-metadata
