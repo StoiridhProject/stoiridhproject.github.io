@@ -17,7 +17,12 @@ div.projects {
 
   &-view {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
+
+    @media all and (max-width: 660px) {
+      flex-flow: column;
+      align-items: center;
+    }
   }
 }
 
